@@ -1,16 +1,16 @@
 # Use an official JBoss Web Server image with Tomcat 11 as the base image.
 FROM registry.redhat.io/jboss-webserver-5/jws56-openjdk11-openshift-rhel8:latest
 
-ARG DB_HOST=172.30.178.192
-ARG DB_NAME=ssoRegisterGuest
-ARG DB_USER=admin	
-ARG DB_PASSWORD=adminpass
+#ARG DB_HOST=172.30.178.192
+#ARG DB_NAME=ssoRegisterGuest
+#ARG DB_USER=admin	
+#ARG DB_PASSWORD=adminpass
 
 # Set environment variables for the database connection
-ENV DATABASE_URL=$DB_HOST
-ENV DATABASE_NAME=$DB_NAME
-ENV DATABASE_USER=$DB_USER
-ENV DATABASE_PASSWORD=$DB_PASSWORD
+#ENV DATABASE_URL=$DB_HOST
+#ENV DATABASE_NAME=$DB_NAME
+#ENV DATABASE_USER=$DB_USER
+#ENV DATABASE_PASSWORD=$DB_PASSWORD
 
 # Switch User
 USER jboss
