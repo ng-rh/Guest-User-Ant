@@ -41,7 +41,7 @@ public class verifyEmail extends HttpServlet {
                 cp = ConnectionPool.getInstance();
                 getServletContext().setAttribute("connPoolInst", cp);
                 // cp = ConnectionPool.setDataSource("localhost", "root", "Rhvh@123", "ssoRegisterGuest", 1);//app connection
-                cp = ConnectionPool.setDataSource("172.30.64.148", "admin", "adminpass", "ssoRegisterGuest", 1);
+                cp = ConnectionPool.setDataSource("172.30.80.179", "admin", "adminpass", "ssoRegisterGuest", 1);
                 }
 
            
